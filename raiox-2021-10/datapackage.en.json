@@ -1,0 +1,1387 @@
+{
+  "resources": [
+    {
+      "hashing": "sha256",
+      "path": "alocacao-servidores.csv",
+      "name": "alocacao-servidores",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "5d7ff14b6aa18856b88a704be6458d09609b8d6b2c686e1b3582c38e444f609c",
+        "bytes": 31122,
+        "fields": 14,
+        "rows": 182
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "quantidade_servidores_cedidos_apf",
+            "type": "integer",
+            "title": "Amount of assigned in other public agencies at the administration\n",
+            "description": "Number of active public servants that are in  exercise outside their origin agency.\n"
+          },
+          {
+            "name": "quantidade_servidores_cedidos_outros",
+            "type": "integer",
+            "title": "Amount of assigned to other public powers and levels",
+            "description": "Number of active public servants working abroad of their agency of origin, ceded to other powers or  \"administrative spheres\" (administrative levels).\n"
+          },
+          {
+            "name": "quantidade_servidores_cedidos",
+            "type": "integer",
+            "title": "Total number of assigned in other public agencies",
+            "description": "Number of active civil servants working abroad of their agency, whether in other agencies of the administration or to other administrative powers or spheres.\n"
+          },
+          {
+            "name": "quantidade_servidores_quadro_pessoal",
+            "type": "integer",
+            "title": "Amount of public servants at the staff board",
+            "description": "Number of public servants at the agency staff board\n"
+          },
+          {
+            "name": "quantidade_estagiarios",
+            "type": "integer",
+            "title": "Amount of trainees",
+            "description": "Number of Trainees at the agency staff board\n"
+          }
+        ]
+      },
+      "title": "Staff: public servant assignment",
+      "description": "Elaborated from a partnership with the central body of the Civil\nStaff System of the Federal Administration (Sipec), which is the\nSecretariat for Staff Management and Performance of the Ministry\nof Economy, the Staff dimension presents a view of the realm of\npublic servants who comprise the workforce that is actually\navailable to perform the activities of public institutions that\ncomprise the [Federal Direct Autarchic and Foundational\nAdministration](https://raiox.economia.gov.br/static/raiox/docs/manual-de-estruturas-organizacionais_2edicao.pdf).\n\nPublic servants can, under certain conditions, be allocated to\nwork in other public agencies. this table presents the numbers\nof servers assigned in the Federal Public Administration and\ninterns in each agency.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "cargos-funcoes-distribuidos-ocupados.csv",
+      "name": "cargos-funcoes-distribuidos-ocupados",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "4ec3a7871dd997bda441336fd08165027b6976c77b6a49b7c15c9b2ce8408388",
+        "bytes": 377001,
+        "fields": 13,
+        "rows": 2304
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "sigla_codigo_cargo_comissao",
+            "type": "string",
+            "title": "Acronym and code of the position of trust",
+            "description": "Acronym and Code of the Position of Trust, in the format of 2 or 3 letters followed by 4 digits, e.g. “DAS1014”, “FCP1014”, “FG0002”, etc., or “NÃO INFORMADO” (NO INFORMATION)\n",
+            "constraints": {
+              "pattern": "([A-Z]{2}[A-Z ]\\d{4}|NÃO INFORMADO)"
+            }
+          },
+          {
+            "name": "cargos_distribuidos",
+            "type": "integer",
+            "title": "Quantity of distributed positions"
+          },
+          {
+            "name": "cargos_ocupados",
+            "type": "integer",
+            "title": "Quantity of occupied positions",
+            "description": "Quantity of positions occupied in the month of reference (in case the same position is occupied by more than one person throughout the month, it is accounted for more than once).\n"
+          },
+          {
+            "name": "cargos_vagos",
+            "type": "integer",
+            "title": "Quantity of vacant positions",
+            "description": "Quantity of vacant positions (difference between `cargos_distribuidos` and `cargos_ocupados`).\n"
+          }
+        ]
+      },
+      "title": "Staff: distributed and filled positions and functions",
+      "description": "Produced by the central body of the System of Organization and\nInstitutional Innovation of the Federal Government (Siorg), the\nSecretariat of Management of the Ministry of Economy, the\nPositions and Functions section presents information and numbers\nabout the positions and commissioned functions from the Direct,\nAutarchic and Foundational Administration. Data is disaggregated\nby: occupancy rates; distribution by sex of the occupant; and\ntypology classifications positions and commissioned functions,\nincluding technical functions.\n\nAccording to item V of article 37 of the Federal Constitution of\n1988, positions of trust are afforded to functions of direction,\nleadership and advice. The functional positions are to be\nexercised exclusively by servants who occupy a permanent\nposition, while the positions of trust are destined to be\noccupied in a transitional basis by people whom the competent\nauthority entrusts to fill the role or to substitute it, even\nthough there are conditions and minimum percentages set in law\nthat must be filled in by career servants.\n\nIn accordance to the intention set forth in the introduction\ntext of the dashboard, as the X-Ray evolves, the idea is to\ndecompose the organizational structure in smaller levels and\nto cross-reference them with those of other dimensions in the\ndashboard, especially with ones about the work force. The idea\nis to build more elaborated indicators which allow complimentary\nanalysis for a better understanding of the reality of the\nFederal Government.\n\nThis table shows the quantities of positions distributed,\noccupied and vacant in each agency or entity.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "cargos-funcoes-perfil.csv",
+      "name": "cargos-funcoes-perfil",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "3838f8a6cccda24d56966b69eaad260e56577a11098a6ad2cbea00192e8c1c7c",
+        "bytes": 9298719,
+        "fields": 18,
+        "rows": 37328
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "sigla_codigo_cargo_comissao",
+            "type": "string",
+            "title": "Acronym and code of the position of trust",
+            "description": "Acronym and Code of the Position of Trust, in the format of 2 or 3 letters followed by 4 digits, e.g. “DAS1014”, “FCP1014”, “FG 0002”, etc.\n",
+            "constraints": {
+              "pattern": "([A-Z]{2}[A-Z ]\\d{4})"
+            }
+          },
+          {
+            "name": "denominacao_cargo_comissao",
+            "type": "string",
+            "title": "Denomination of the position of trust",
+            "description": "Denomination of the position of trust or function, e.g.: “CHEFE” (BOSS), “COORDENADOR” (COORDINATOR), “ASSESSOR” (ADVISOR), etc.\n"
+          },
+          {
+            "name": "sexo",
+            "type": "string",
+            "title": "Gender",
+            "description": "Gender of the workforce: **F** (feminine) or **M** (masculine)\n",
+            "constraints": {
+              "pattern": "[FM]"
+            }
+          },
+          {
+            "name": "faixa_etaria",
+            "type": "string",
+            "title": "Age group",
+            "description": "Age group of the workforce, in one of the following ranges:\n\n* 15 A 19 ANOS (15 TO 19 YEARS OLD)\n* 20 A 24 ANOS (20 TO 24 YEARS OLD)\n* 25 A 29 ANOS (25 TO 29 YEARS OLD)\n* 30 A 34 ANOS (30 TO 34 YEARS OLD)\n* 35 A 39 ANOS (35 TO 39 YEARS OLD)\n* 40 A 44 ANOS (40 TO 44 YEARS OLD)\n* 45 A 49 ANOS (45 TO 49 YEARS OLD)\n* 50 A 54 ANOS (50 TO 54 YEARS OLD)\n* 55 A 59 ANOS (55 TO 59 YEARS OLD)\n* 60 A 64 ANOS (60 TO 64 YEARS OLD)\n* 65 A 69 ANOS (65 TO 69 YEARS OLD)\n* 70 ANOS OU MAIS (70 OR OLDER)\n",
+            "constraints": {
+              "pattern": "\\d{1,2}\\s+A\\s+\\d{1,2}\\s+ANOS|\\d{2}\\s+ANOS\\s+OU\\s+MAIS|NÃO INFORMADO"
+            },
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "escolaridade",
+            "type": "string",
+            "title": "Education level",
+            "description": "Education level of the workforce (e.g. “**SUP COMPL OU HAB LEGAL EQV**” (GRADUATE LEVEL OR LEGAL EQUIVALENT), “**2O GR COMPL OU TEC PROFISS**” (COMPLETE HIGH SCHOOL OR PROFESSIONAL TECHNICIAN), “**DOUTORADO(T)**” (DOCTOR'S DEGREE), “**MESTRADO(T)**” (MASTER'S DEGREE), etc.)\n"
+          },
+          {
+            "name": "regime_juridico",
+            "type": "string",
+            "title": "Legal regime",
+            "description": "Legal regime under which the workforce is hired (e.g. “**EST**” (STATUTORY REGIME), “**CDT**”, “**CLT**” (BRAZILIAN WORK CONSOLIDATION LAW), etc.)\n"
+          },
+          {
+            "name": "situacao_vinculo_servidor",
+            "type": "string",
+            "title": "Servant bond situation",
+            "description": "Situation of the workforce bond, according to the rules of the SIAPE/SIGEPE system (e.g. “**ATIVO PERMANENTE**” (PERMANENT ACTIVE DUTY), “**CONT.PROF.SUBSTITUTO**” (DEPUTY PROFESSOR CONTRACT), “**NOMEADO CARGO COMIS.**” (APPOINTED TO POSITION OF TRUST), etc.)\n"
+          },
+          {
+            "name": "possui_vinculo",
+            "type": "boolean",
+            "title": "Has bond",
+            "description": "indicator of whether or not the workforce has a bond to the FPA: **SEM VÍNCULO** (WITHOUT BOND) or **COM VÍNCULO** (WITH BOND)\n",
+            "trueValues": [
+              "COM VÍNCULO"
+            ],
+            "falseValues": [
+              "SEM VÍNCULO"
+            ],
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "quantidade",
+            "type": "integer",
+            "title": "Quantity",
+            "description": "Quantity of Positions or Functions"
+          }
+        ]
+      },
+      "title": "Staff: positions by profile",
+      "description": "Produced by the very central body of the Federal Government\nInstitutional Organization and Innovation System (Siorg), which\nis the Secretariat for Management of the Ministry of Economy,\nthe Positions section shows information and numbers about the\npositions of trust in the Direct, Autarchic and Foundational\nAdministration. The data is disaggregated by: occupation\nindices; distribution by gender of the occupant; and typology\nclassifications on the positions of trust, including technical\nones.\n\nAccording to item V of article 37 of the Federal Constitution of\n1988, positions of trust are afforded to functions of direction,\nleadership and advice. The functional positions are to be\nexercised exclusively by servants who occupy a permanent\nposition, while the positions of trust are destined to be\noccupied in a transitional basis by people whom the competent\nauthority entrusts to fill the role or to substitute it, even\nthough there are conditions and minimum percentages set in law\nthat must be filled in by career servants.\n\nIn accordance to the intention set forth in the introduction\ntext of the dashboard, as the X-Ray evolves, the idea is to\ndecompose the organizational structure in smaller levels and\nto cross-reference them with those of other dimensions in the\ndashboard, especially with ones about the work force. The idea\nis to build more elaborated indicators which allow complimentary\nanalysis for a better understanding of the reality of the\nFederal Government.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "custeio-administrativo.csv",
+      "name": "custeio-administrativo",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "a7d7ffc543c476029953070985b7bd4433177c529a7fd1243cf0a0e6074b974c",
+        "bytes": 2770523,
+        "fields": 15,
+        "rows": 11561
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "codigo_unidade_orcamentaria",
+            "type": "integer",
+            "title": "Budget unit code"
+          },
+          {
+            "name": "codigo_item",
+            "type": "integer",
+            "title": "Expenditure Item code"
+          },
+          {
+            "name": "nome_item",
+            "type": "string",
+            "title": "Expenditure Item name",
+            "description": "Name of the Expenditure Item (e.g. “material de consumo” (consumable material), “serviços de limpeza e conservação” (cleaning and conservation services), “vigilância ostensiva” (watch guard), etc.)\n"
+          },
+          {
+            "name": "codigo_natureza_despesa_detalhada",
+            "type": "integer",
+            "title": "Detailed Expenditure Nature code"
+          },
+          {
+            "name": "nome_natureza_despesa_detalhada",
+            "type": "string",
+            "title": "Detailed Expenditure Nature name",
+            "description": "Name of the Detailed Expenditure Nature (e.g. “MATERIAL DE ESCRITORIO” (OFFICE MATERIALS), “GENEROS DE ALIMENTACAO” (FOODSTUFFS), “MATERIAL P/ MANUT.DE BENS IMOVEIS/INSTALACOES” (MATERIALS FOR REAL ESTATE/INSTALLATION MAINTENANCE), etc.)\n"
+          },
+          {
+            "name": "valor",
+            "type": "number",
+            "title": "Value",
+            "description": "Expenditure value, in Brazilian Real"
+          }
+        ]
+      },
+      "title": "Administrative defrayal",
+      "description": "The Administrative Defrayal section shows data regarding to the\nexpenses that bring the necessary support to the effective\ndelivery to society of goods and services, comprising the basis\nfor the supply of public services.\n\nThus, the administrative costs data aims to measure what has\nbeen traditionally called \"middle area\", and comprises the\nexpenses related to consumable materials, real estate rentals,\nelectric power and water, support services, among many others.\nThe complete roster and the methodological note can be found on\nthe webpage of the [Administrative Costs\nBulletin](https://www.gov.br/economia/pt-br/centrais-de-conteudo/publicacoes/boletins/boletim-de-custeio-administrativo).\n\nThe classification of the expenses with administrative costs\nfollows the Accounting Plan Applied to the Public Sector –\nPCASP (in the Portuguese acronym), elaborated by the Secretariat\nof the National Treasury – STN, and corresponds to the most\nrepresentative expenditure sub-elements found and selected by\nthe Secretariat of the Federal Budget – SOF based upon analysis\nof the opening of Federal Public Expenses by Expenditure Nature\nin its greatest level of detail.\n\nBecause of the intrinsic nature of the Federal Public Budget,\ndata is always related to the actual realized expenditures.\nTherefore, it is important to note that, although the available\ndata is disaggregated by month, there will be cases where the\nservice delivery contracts in this section are awarded annually.\nThat may explain, at least partially, variations in the\namplitude of monthly spending.\n\nThe data available in this section is extracted from the\nIntegrated System for Financial Management of the Federal\nGovernment – SIAFI (in the Portuguese acronym), and consolidated\nby the Secretariat of the Federal Budget – SOF.\n\nThe concepts of financial programming components, such as the\nExpenditure Nature, can be found on the [Technical Guide of the\nBudget](https://www1.siop.planejamento.gov.br/mto/doku.php/mto2020:cap4#componentes_da_programacao_financeira).\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "orcamento.csv",
+      "name": "orcamento",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "9ecc8d683f3851d75110c044c5419d543c486193e895f1cea96556fee7c11ff1",
+        "bytes": 66499479,
+        "fields": 44,
+        "rows": 128851
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "codigo_uo",
+            "type": "integer",
+            "title": "Budget Unit code"
+          },
+          {
+            "name": "nome_uo",
+            "type": "string",
+            "title": "Budget Unit name"
+          },
+          {
+            "name": "codigo_esfera_orcamentaria",
+            "type": "integer",
+            "title": "Budget Sphere code"
+          },
+          {
+            "name": "nome_esfera_orcamentaria",
+            "type": "string",
+            "title": "Budget Sphere name"
+          },
+          {
+            "name": "codigo_funcao",
+            "type": "integer",
+            "title": "Programmatic Function code"
+          },
+          {
+            "name": "nome_funcao",
+            "type": "string",
+            "title": "Programmatic Function name"
+          },
+          {
+            "name": "codigo_subfuncao",
+            "type": "integer",
+            "title": "Programmatic Subfunction code"
+          },
+          {
+            "name": "nome_subfuncao",
+            "type": "string",
+            "title": "Programmatic Subfunction name"
+          },
+          {
+            "name": "codigo_programa",
+            "type": "integer",
+            "title": "Budget Program code"
+          },
+          {
+            "name": "nome_programa",
+            "type": "string",
+            "title": "Budget Program name"
+          },
+          {
+            "name": "codigo_acao",
+            "type": "string",
+            "title": "Budget Action code",
+            "constraints": {
+              "pattern": "\\w{4}"
+            }
+          },
+          {
+            "name": "nome_acao",
+            "type": "string",
+            "title": "Budget Action name"
+          },
+          {
+            "name": "codigo_grupo_natureza_despesa",
+            "type": "integer",
+            "title": "Expenditure Nature Group code"
+          },
+          {
+            "name": "nome_grupo_natureza_despesa",
+            "type": "string",
+            "title": "Expenditure Nature Group name"
+          },
+          {
+            "name": "codigo_modalidade_aplicacao",
+            "type": "integer",
+            "title": "Code for the Expenditure Nature Application Mode"
+          },
+          {
+            "name": "nome_modalidade_aplicacao",
+            "type": "string",
+            "title": "Name of the Expenditure Nature Application Mode"
+          },
+          {
+            "name": "codigo_categoria_economica_natureza_despesa",
+            "type": "integer",
+            "title": "Code for the Economic Category of the Expenditure Nature"
+          },
+          {
+            "name": "codigo_elemento_despesa_natureza_despesa",
+            "type": "integer",
+            "title": "Code for the Expenditure Element of the Expenditure Nature"
+          },
+          {
+            "name": "codigo_subitem_natureza_despesa",
+            "type": "integer",
+            "title": "Expenditure Nature Subitem code"
+          },
+          {
+            "name": "codigo_natureza_despesa_detalhada",
+            "type": "string",
+            "title": "Detailed Expenditure Nature code",
+            "constraints": {
+              "pattern": "\\d{6}[0-9-]\\d"
+            }
+          },
+          {
+            "name": "nome_natureza_despesa_detalhada",
+            "type": "string",
+            "title": "Detailed Expenditure Nature name"
+          },
+          {
+            "name": "codigo_resultado_primario",
+            "type": "integer",
+            "title": "Primary Result code"
+          },
+          {
+            "name": "nome_resultado_primario",
+            "type": "string",
+            "title": "Primary Result name"
+          },
+          {
+            "name": "considerar_no_raiox",
+            "type": "boolean",
+            "title": "Considered in the X-Ray",
+            "description": "Whether or not the line is taken into account in the X-Ray of the Federa Public Administration dashboard (“SIM” (YES) or “NÃO” (NO)).\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "valor_credito_disponivel",
+            "type": "number",
+            "title": "Available credit",
+            "description": "Value of available credit, in Brazilian Real."
+          },
+          {
+            "name": "valor_credito_indisponivel",
+            "type": "number",
+            "title": "Unavailable credit",
+            "description": "Value of unavailable credit, in Brazilian Real."
+          },
+          {
+            "name": "valor_despesas_empenhadas",
+            "type": "number",
+            "title": "Committed expenditures",
+            "description": "Value of committed expenditures, in Brazilian Real."
+          },
+          {
+            "name": "valor_despesas_liquidadas",
+            "type": "number",
+            "title": "Settled expenditures",
+            "description": "Value of settled expenditures, in Brazilian Real."
+          },
+          {
+            "name": "valor_despesas_pagas",
+            "type": "number",
+            "title": "Paid expenditures",
+            "description": "Value of paid expenditures, in Brazilian Real."
+          },
+          {
+            "name": "valor_dotacao_atualizada",
+            "type": "number",
+            "title": "Updated allocation",
+            "description": "Value of updated allocation, in Brazilian Real."
+          },
+          {
+            "name": "valor_dotacao_inicial",
+            "type": "number",
+            "title": "Initial allocation",
+            "description": "Value of initial allocation, in Brazilian Real."
+          },
+          {
+            "name": "valor_rap_a_pagar",
+            "type": "number",
+            "title": "Payment leftovers to be paid",
+            "description": "Value of payment leftovers to be paid, in Brazilian Real.\n"
+          },
+          {
+            "name": "valor_rap_cancelados",
+            "type": "number",
+            "title": "Cancelled payment leftovers",
+            "description": "Value of payment leftovers cancelled, in Brazilian Real.\n"
+          },
+          {
+            "name": "valor_rap_inscritos",
+            "type": "number",
+            "title": "Registered payment leftovers",
+            "description": "Value of payment leftovers registered, in Brazilian Real.\n"
+          },
+          {
+            "name": "valor_rap_pagos",
+            "type": "number",
+            "title": "Paid payment leftovers",
+            "description": "Value of payment leftover paid, in Brazilian Real."
+          }
+        ]
+      },
+      "title": "Primary Budget",
+      "description": "Conceived in partnership with the Secretariat of the Federal\nBudget of the Ministry of Economy, the Primary Budget section\npresents a partial view of the budget execution values, with a\nslice focused on: non-financial expenditures (Primary Result\nIndicator – RP different from 0); and expenditures forecasted\nin the Fiscal Budget and in the Social Security Budget.\n\nBesides the fact that the scope comprises only the bodies of the\n[Direct, Autarchic and Foundational Administration(https://raiox.economia.gov.br/static/raiox/docs/manual-de-estruturas-organizacionais_2edicao.pdf),\nthis is a perspective that has been used in the institutional\ntransformation initiatives since the last Government Transition\nprocess. In that occasion, the slice was presented by means of\nthe Government Transition Dashboard, where the X-Ray has\ninherited its concepts from. In general, the focus is on those\nitems that offer to the manager a greater management capacity,\nwhere their actions are capable of generating impact.\n\nAmong other details contained in the support items and\nmaterials, it stands out that the budgets of their own and\ninvestments of the non-dependent state companies have not been\nincluded, as well as expenses with interests, charges,\namortization and debt refinancing. Some cross budgets were\nremoved and the budget of some Budget Actions related to the\nmanagement and application of funds and budget transfers were\nalso excluded.\n\nThe concepts and components of the financial programming, such\nas the Expenditure Nature, can be found in the [Technical Guide\nof the Budget](https://www1.siop.planejamento.gov.br/mto/doku.php/mto2020:cap4#componentes_da_programacao_financeira).\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "patrimonio-uniao.csv",
+      "name": "patrimonio-uniao",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "b35acf5816f3949bfe2e92d79f6a7621b77d2aae43a028b3beda66c6a2cc5e29",
+        "bytes": 14175847,
+        "fields": 20,
+        "rows": 50838
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "regime_utilizacao",
+            "type": "string",
+            "title": "Usage regime",
+            "description": "Usage regime of the Real Estate, e.g. “uso em serviço público” (use in public service), “imóvel funcional” (functional real estate), “vago para uso” (vacant for use), etc.\n"
+          },
+          {
+            "name": "tipo_destinacao",
+            "type": "string",
+            "title": "Type of destination",
+            "description": "Type of destination of the Real Estate, e.g. “residência” (home), “escola” (school), “hospital”, “universidade” (university), “aeroporto” (airport), etc.\n"
+          },
+          {
+            "name": "tipo_imovel",
+            "type": "string",
+            "title": "Type of real estate",
+            "description": "Type of Real Estate, e.g. “apartamento” (apartment), “casa” (house), “edifício / prédio” (building), etc.\n"
+          },
+          {
+            "name": "endereco",
+            "type": "string",
+            "title": "Address",
+            "description": "Addess of the Real Estate"
+          },
+          {
+            "name": "municipio_nome",
+            "type": "string",
+            "title": "Municipality (name)",
+            "description": "Name of the municipality"
+          },
+          {
+            "name": "municipio_cod_ibge",
+            "type": "integer",
+            "title": "Municipality (IBGE code)",
+            "description": "The IBGE code of the municipality"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "title": "FU",
+            "description": "Acronym of the federative unit (state or federal district)\n"
+          },
+          {
+            "name": "metro_quadrado_area",
+            "type": "number",
+            "title": "Area (m²)",
+            "description": "Total area of the Real Estate, in square meters",
+            "constraints": {
+              "minimum": 0.0
+            }
+          },
+          {
+            "name": "metro_quadrado_construida",
+            "type": "number",
+            "title": "Built area (m²)",
+            "description": "The Real Estate's built area, in square meters",
+            "constraints": {
+              "minimum": 0.0
+            }
+          },
+          {
+            "name": "valor_imovel",
+            "type": "number",
+            "title": "Real estate value",
+            "description": "Value of the Real Estate, in Brazilian Real"
+          },
+          {
+            "name": "valor_aluguel",
+            "type": "number",
+            "title": "Rent value",
+            "description": "Value of the Real Estate, in Brazilian Real"
+          }
+        ]
+      },
+      "title": "Union Property",
+      "description": "The segment of data of the Union equity, represented here,\ncomes from a collaboration with the Secretariat for Coordination and\nGovernance of Union Property, which is an area of ​​the Ministry of\nEconomy who is responsible for managing the real estate assets of the\nUnion.\n\nThis section is intended to demonstrate, through indicators and\ngraphics, quantitative and qualitative data of the real estate \nproperties in use by the Union, that are intended for the execution of\nadministrative services or the provision of public services in\ngeneral, such as public office buildings.\n\nThe data presented does not include the so-called private properties\n— which are not occupied by the Public Administration — but\nassigned to third parties through land regularization instruments\n, such as tenures, Real Rights Concessions of\nUse (CDRU), and Special Use Concession for Housing purposes\n(CUEM). The data presented does not include goods in common use\nof the people — those necessary for the community, for example,\nrivers, squares, public roads and beaches.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "pessoal-forca-trabalho.csv",
+      "name": "pessoal-forca-trabalho",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "5586c46e07a5ba9530cf1d8c07145e938555582b3a4dbb9b384935cc7592860e",
+        "bytes": 8728169,
+        "fields": 17,
+        "rows": 36734
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "sexo",
+            "type": "string",
+            "title": "Gender",
+            "description": "Gender of the workforce: **F** (feminine) or **M** (masculine)\n",
+            "constraints": {
+              "pattern": "[FM]|NÃO INFORMADO"
+            },
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "faixa_etaria",
+            "type": "string",
+            "title": "Age group",
+            "description": "Age group of the workforce, in one of the following ranges:\n\n* 15 A 19 ANOS (15 TO 19 YEARS OLD)\n* 20 A 24 ANOS (20 TO 24 YEARS OLD)\n* 25 A 29 ANOS (25 TO 29 YEARS OLD)\n* 30 A 34 ANOS (30 TO 34 YEARS OLD)\n* 35 A 39 ANOS (35 TO 39 YEARS OLD)\n* 40 A 44 ANOS (40 TO 44 YEARS OLD)\n* 45 A 49 ANOS (45 TO 49 YEARS OLD)\n* 50 A 54 ANOS (50 TO 54 YEARS OLD)\n* 55 A 59 ANOS (55 TO 59 YEARS OLD)\n* 60 A 64 ANOS (60 TO 64 YEARS OLD)\n* 65 A 69 ANOS (65 TO 69 YEARS OLD)\n* 70 ANOS OU MAIS (70 OR OLDER)\n",
+            "constraints": {
+              "pattern": "\\d{1,2}\\s+A\\s+\\d{1,2}\\s+ANOS|\\d{2}\\s+ANOS\\s+OU\\s+MAIS|NÃO INFORMADO"
+            },
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "escolaridade",
+            "type": "string",
+            "title": "Education level",
+            "description": "Education level of the workforce (e.g. “**SUP COMPL OU HAB LEGAL EQV**” (GRADUATE LEVEL OR LEGAL EQUIVALENT), “**2O GR COMPL OU TEC PROFISS**” (COMPLETE HIGH SCHOOL OR PROFESSIONAL TECHNICIAN), “**DOUTORADO(T)**” (DOCTOR'S DEGREE), “**MESTRADO(T)**” (MASTER'S DEGREE), etc.)\n"
+          },
+          {
+            "name": "regime_juridico",
+            "type": "string"
+          },
+          {
+            "name": "situacao_vinculo_servidor",
+            "type": "string",
+            "title": "Servant bond situation",
+            "description": "Situation of the workforce bond, according to the rules of the SIAPE/SIGEPE system (e.g. “**ATIVO PERMANENTE**” (PERMANENT ACTIVE DUTY), “**CONT.PROF.SUBSTITUTO**” (DEPUTY PROFESSOR CONTRACT), “**NOMEADO CARGO COMIS.**” (APPOINTED TO POSITION OF TRUST), etc.)\n"
+          },
+          {
+            "name": "possui_vinculo",
+            "type": "boolean",
+            "title": "Has bond",
+            "description": "indicator of whether or not the workforce has a bond to the FPA: **SEM VÍNCULO** (WITHOUT BOND) or **COM VÍNCULO** (WITH BOND)\n",
+            "trueValues": [
+              "COM VÍNCULO"
+            ],
+            "falseValues": [
+              "SEM VÍNCULO"
+            ]
+          },
+          {
+            "name": "quantidade_forca_trabalho",
+            "type": "integer",
+            "title": "Quantity",
+            "description": "Amount of people in the workforce",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "remuneracao_media",
+            "type": "number",
+            "title": "Average wage",
+            "description": "Average wage of people in the workforce, in Brazilian Real\n",
+            "constraints": {
+              "minimum": 0.0
+            }
+          }
+        ]
+      },
+      "title": "Staff: workforce",
+      "description": "Elaborated from a partnership with the central body of the Civil\nStaff System of the Federal Administration (Sipec), which is\nthe Secretariat for Staff Management and Performance of the\nMinistry of Economy, the Staff dimension presents a view of\nthe realm of public servants who comprise the workforce that is\nactually available to perform the activities of public\ninstitutions that comprise the [Federal Direct Autarchic and\nFoundational Administration](https://raiox.economia.gov.br/static/raiox/docs/manual-de-estruturas-organizacionais_2edicao.pdf).\n\nThis section presents an overview of the staff in active duty in\nthe public bodies and entities, including a wide perspective of\nthe workforce, with its characteristics: by gender; by age\ngroup; by education level; and by the positions and careers of\nthe permanent staff. Among the most important concepts to this\nsection, the workforce is meant to be considered the permanent\nand commissioned servants, with and without permanent ties to\nthe Administration, including professionals hired for a\ndetermined time frame (temporary staff), which are effectively\nin duty on the body or entity.\n\nThis version does not include some details of the workforce of\nthe Central Bank of Brazil, which are being incorporated,\ninformation on the staff of the Brazilian Intelligence Agency\n(ABIN), and the military staff of the Armed Forces. The realm of\nstate owned companies, the governance of which is coordinated by\nthe Secretariat for Coordination and Governance of State\nCompanies - SEST, is also not included. This information is\npublished by the [Overview of the State\nCompanies](http://www.panoramadasestatais.planejamento.gov.br/QvAJAXZfc/opendoc.htm?document=paineldopanoramadasestatais.qvw&lang=en-US&host=QVS@srvbsaiasprd07&anonymous=true)\nand the [State Companies\nBulletin](https://raiox.economia.gov.br/static/raiox/docs/12a-edicao-boletim-das-empresas-estatais-federais.pdf).\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "solucoes-modernizacao.csv",
+      "name": "solucoes-modernizacao",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "7b31d22616eb780c10e2063e44901e183f02a07e27523b1192b7883847d77f17",
+        "bytes": 36839,
+        "fields": 18,
+        "rows": 187
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "possui_protocolo_integrado",
+            "type": "boolean",
+            "title": "Has Integrated Filing",
+            "description": "Whether or not the Body has (SIM/NÃO) (YES/NO) interoperability among the different filing systems used to record the transfer of documents with the Integrated Filing System.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "possui_processo_eletronico",
+            "type": "boolean",
+            "title": "Has electronic case file",
+            "description": "Whether or not the Body has (SIM/NÃO) (YES/NO) a system for managing electronic case files and documents (e.g. SEI, SIPAC, SIGA, SAPIENS or another).\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "integra_barramento_pen",
+            "type": "boolean",
+            "title": "Integrates the PEN Bus",
+            "description": "Whether or not the Body has (SIM/NÃO) (YES/NO) a deployed bus of the National Electronic Case File, which is a centralized infrastructure to send digital case files or administrative documents to another body in a secure manner and with reliable delivery.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "utiliza_taxigov",
+            "type": "boolean",
+            "title": "Uses Taxi Gov",
+            "description": "Whether or not the Body has adhered to (SIM/NÃO) (YES/NO) using TaxiGov, a model which replaced the rental and owned vehicles for other forms of transportation of servants and collaborators in work transfers.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "utiliza_almoxarifado_virtual",
+            "type": "boolean",
+            "title": "Uses the Virtual Warehouse",
+            "description": "Whether or not the Body uses the Virtual Warehouse (SIM/NÃO) (YES/NO). The service is based upon the acquisition of office consumable materials though the technological platform.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "integra_rede_mais_brasil",
+            "type": "boolean",
+            "title": "Integrates the +Brazil Network",
+            "description": "Whether or not the Body has joined the +Brazil Network, which is the network of collaborative governance that aims to promote a greater integration among the stakeholders in the cycle of public fund transfers (SIM/NÃO) (YES/NO).\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "aderiu_transforma_gov",
+            "type": "boolean",
+            "title": "Has adhered to TransformaGov",
+            "description": "Whether or not the Body has adhered to (SIM/NÃO) (YES/NO) the Strategic Management and State Transformation Program (TransformaGov). The program, targeted to the direct autarchic and foundational public administration, except for Federal Education Institutions, comprises new institutional arrangements and organizational efficiency measures.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "publica_pei",
+            "type": "boolean",
+            "title": "Publishes PEI",
+            "description": "Whether or not the Body publishes (SIM/NÃO) (YES/NO) its Institutional Strategic Plan - PEI (in the Portuguese acronym), which is an instrument to determine its main objectives, the policies and strategies that shall govern it, the use and availability of resources, the establishment of objectives, strategies, goals, actions and values, in order to demand the deployment of resources and priority setting.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "integra_pag_terouro",
+            "type": "boolean",
+            "title": "Integrates PagTesouro",
+            "description": "Whether or not the Body uses (SIM/NÃO) (YES/NO) PagTesouro in its services, which is the government's payments platform.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          }
+        ]
+      },
+      "title": "Modernization solutions",
+      "description": "Under modernization solutions, information is organized about the\nadhesion and use of shared services and other initiatives leaning\ntowards institutional innovation, process optimization, cost\nreduction and the increase of transparency in the Federal Public\nAdministration. This monitoring shows the situation of adhesion\nand use by bodies and entities of the Direct, Autarchic and\nFoundational Administration. Here is presented data about the\ngoing of some of the solutions offered by the Secretariat for\nManagement, under coordination of the Special Secretariat for\nDe-bureaucratization, Management and Digital Government. A lot\nmore information about shared services, systems, apps and\ndigital platforms can be found on the Catalog of Solutions.\n\nOn this dashboard, information is presented about the adherence\nto the TransformaGov Program and to the +BRAZIL Network, about\nthe use of new service models such as TaxiGov and Virtual\nWarehouse. Furthermore, it's also possible to monitor the\nadherence of bodies and entities to the National Electronic\nCase File (PEN, in the Portuguese acronym), with comprises\nbasically the deployment of a Electronic Case File System, the\ncoupling of that system to the PEN Bus which makes it possible\nto transfer case files between bodies and entities by digital\nmeans and, finally, the availability of information about these\ntransfers in the Integrated Filing Portal.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "transformacao-digital.csv",
+      "name": "transformacao-digital",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "02ee521da09f391ed5199c01062b912f93ae926cd1dabab5ace48c2d83764bc4",
+        "bytes": 1355783,
+        "fields": 22,
+        "rows": 4408
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Full name of the Superior Body"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Acronym of the Superior Body"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "SIORG Code of the Public Body"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Full name of the Public Body"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Name of the Public Body in the X-Ray",
+            "description": "Name of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Acronym of the Public Body in the X-Ray",
+            "description": "Acronym of the Public Body, the way it appears consolidated in the X-Ray\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Year/month of reference",
+            "description": "Year/month in the format **YYYYMM** of reference for the extracted data\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "title": "Area",
+            "description": "Thematic area of the service"
+          },
+          {
+            "name": "servico",
+            "type": "string",
+            "title": "Service",
+            "description": "Name of the service"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "title": "Situation",
+            "description": "The service's situation in regards to its digital transformation according to the Secretariat for Digital Government's control: '**Digital**', '**Prospecção**' (under prospecting), '**Transformado**' (transformed), '**Pactuado**' (agreed upon), '**Implantação**' (deployment), '**Automação**' (being automated), '**Preparação**' (under preparation) or '**Não digital**' (non-digital).\n",
+            "constraints": {
+              "enum": [
+                "Digital",
+                "Prospecção",
+                "Transformado",
+                "Pactuado",
+                "Não digital",
+                "Não informado",
+                "Automação",
+                "Implantação",
+                "Preparação",
+                "Não digitalizável"
+              ]
+            },
+            "missingValues": [
+              "Não informado"
+            ]
+          },
+          {
+            "name": "situacao_raiox",
+            "type": "string",
+            "title": "Situation in the X-Ray",
+            "description": "Situation of the service in regards to its digital transformation, as shown in the X-Ray dashboard: '**Digitalizado**' (digitized), **Digitalização não iniciada**' (digitization not started) or '**Em digitalização***' (under digitization).\n",
+            "constraints": {
+              "enum": [
+                "Digitalizado",
+                "Digitalização não iniciada",
+                "Em digitalização",
+                "Não digitalizável"
+              ]
+            }
+          },
+          {
+            "name": "integracao_pagtesouro",
+            "type": "string",
+            "title": "Integration with PagTesouro",
+            "description": "The service's situation in regards to its integration with PagTesouro: ‘**Integrado**’ (integrated), ‘**Pactuação**’ (under agreement), or blank.\n",
+            "constraints": {
+              "enum": [
+                "Integrado",
+                "Pactuação",
+                "Em homologação",
+                "Implantação"
+              ]
+            }
+          },
+          {
+            "name": "valor_percentual_etapas_digitais",
+            "type": "number",
+            "title": "Percentage of digital stages",
+            "description": "Percentage, varying from 0 to 1, of the amount of stages of the service which are digital, in relation to the total quantity of stages of the service.\n",
+            "constraints": {
+              "minimum": 0.0,
+              "maximum": 1.0
+            }
+          },
+          {
+            "name": "valor_economia_potencial_governo",
+            "type": "number",
+            "title": "Potential savings to the government",
+            "description": "Potential savings to the government with the digitization of the service, in Brazilian Real.\n"
+          },
+          {
+            "name": "valor_economia_potencial_sociedade",
+            "type": "number",
+            "title": "Economia potencial para a sociedade",
+            "description": "Potential savings to the society with the digitization of the service, in Brazilian Real.\n"
+          },
+          {
+            "name": "quantidade_beneficiados_ano",
+            "type": "integer",
+            "title": "Amount of beneficiaries by year",
+            "description": "Amount of people benefited by the service, by year.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "valor_economia_anual_governo",
+            "type": "number",
+            "title": "Annual savings to the government",
+            "description": "Actual savings to the government with the digitization of the service, in Brazilian Real, by year.\n"
+          },
+          {
+            "name": "valor_economia_anual_sociedade",
+            "type": "number",
+            "title": "Annual savings to society",
+            "description": "Actual savings to society with the digitization of the service, in Brazilian Real, by year.\n"
+          },
+          {
+            "name": "valor_investimento",
+            "type": "number",
+            "title": "Investment value",
+            "description": "Investment value of the service digitization"
+          },
+          {
+            "name": "previsao_entrega_trimestre",
+            "type": "integer",
+            "title": "Forecast of delivery (quarter)",
+            "description": "Forecast of the quarter in which the service digitization will be delivered, in quarter number, counting from the first quarter of 2019, which receives the value 1, incremented at each quarter thereafter. This applies only to services with the following situations: Pactuado (agreed upon), Preparação (under preparation), Automação (under automation), Implantação (deployment) and Transformado (transformed).\n",
+            "constraints": {
+              "minimum": 1
+            }
+          }
+        ]
+      },
+      "title": "Digital transformation",
+      "description": "Through the Digital Transformation Plans agreed upon by the\npublic bodies and entities with the Secretariat for Digital\nGovernment of the Ministry of Economy, this section presents a\nsummary of the government's efforts in the scope of the digital\ntransformation strategy, with the objective of simplifying the\nmonitoring, evaluation and, most importantly, access of\ncitizens to the public services.\n\nHere the services are presented according to their stage in the\ndigitization process (whether it's not been stared, underway or\nfinished); the organization by thematic area; by body or entity;\nand the number of beneficiaries, in addition to the potential\neconomy attained with the digitization of said services.\n\nThe monitoring of these actions, under the responsibility of the\nSpecial Secretariat for De-bureaucratization, Management and\nDigital Government of the Ministry of Economy, is made by means\nof the Digital Transformation Plans, in which the goals are\nagreed upon with the public bodies of the Direct, Autarchic and\nFoundational Administration.\n"
+    }
+  ],
+  "profile": "data-package",
+  "name": "raio-x-da-administracao-publica-federal-2021-10",
+  "title": "X-Ray of the Federal Public Administration (October/2021)",
+  "description": "The X-Ray of the Federal Public Administration is a management tool\nbeing developed by the Special Secretariat for De-bureaucratization\nManagement and Digital Government of the Ministry of Economy. Its\nobjective is to foster the monitoring of public management, its\nimprovement using data and information, and to strengthen the\nStructuring Systems of the Federal Government.\n\nThe dashboard consolidates a dataset about:\n\n* the Primary Budget;\n* the composition and characteristics of Staff;\n* the structure of Positions and Functions;\n* the evolution of the Digital Transformation process;\n* the adhesion of institutions to the Modernization Solutions;\n* information about the Union's Property and the monitoring\n  of Administrative Defrayal expenditures.\n\nIn addition to visualizing data on the dashboard, it's also possible\nto download and use as open data all the information contained\ntherein. That makes possible other kinds of analysis, which have not\nbeen previously foreseen in the dashboard visualizations, and to\ncross-reference the data with other sources.\n\n## Table Layouts\n\nThe available data is organized as files in CSV (comma separated\nvalues) files that can be opened in any spreadsheet editor. The data\nis grouped at the smallest possible level of aggregation, except\nwith de-aggregating it would expose personal data. It follows a\ndimensional structure i.e. there are columns representing dimensions\nand metrics. The amount of lines in each table depends on the\nquantity of dimensions used. The columns containing metrics can be\nconsolidated by respecting the same initial rule. For example, on\nthe table `pessoal-forca-trabalho.csv` table we could calculate the\ntotal quantity of the work force by just summing up all of the\nvalues in the `quantidade_forca_trabalho` column. On the other hand,\nto calculate the total average of wages, it is necessary to make a\nweighted average of the `remuneracao_media` field, weighted with the\n`quantidade_forca_trabalho` field. All tables have the following\nfields: `orgao_superior_codigo_siorg`,\n`orgao_superior_nome`, `orgao_superior_sigla`, `orgao_codigo_siorg`,\n`orgao_nome`, `orgao_sigla`, `orgao_como_no_raiox_nome`,\n`orgao_como_no_raiox_sigla` and `ano_mes_referencia`. These fields\nrefer to the public body, its superior body (eg.: FUNAI is bound to\nMJSP) and the year/month of the extracted data.\n\nThe `orgao_como_no_raiox_nome` and `orgao_como_no_raiox_sigla`\nfields refer to the way they are consolidated in the X-Ray of the\nFederal Public Administration dashboard. In it, some bodies do\nappear consolidated together with the superior hierarchical level.\nFor example, data from the Civil House of the Presidency of the\nRepublic appear consolidated together with the Presidency of the\nRepublic. In open data, we've decided to convey the data in a more\ndisaggregated way, in order to make more analysis possible. However,\nso that the information may coincide with the dashboard, the body\nmust be considered as represented in this field.\n",
+  "version": "1.3.0",
+  "contributors": [
+    {
+      "title": "General Coordination of Information Management at SEGES",
+      "email": "seges.cginf@economia.gov.br",
+      "organization": "Ministry of Economy",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "X-Ray of the Federal Public Administration",
+      "path": "https://gov.br/raiox"
+    }
+  ]
+}

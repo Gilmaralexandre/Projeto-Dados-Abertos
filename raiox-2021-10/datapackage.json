@@ -1,0 +1,1387 @@
+{
+  "resources": [
+    {
+      "hashing": "sha256",
+      "path": "alocacao-servidores.csv",
+      "name": "alocacao-servidores",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "5d7ff14b6aa18856b88a704be6458d09609b8d6b2c686e1b3582c38e444f609c",
+        "bytes": 31122,
+        "fields": 14,
+        "rows": 182
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "quantidade_servidores_cedidos_apf",
+            "type": "integer",
+            "title": "Quantidade de cedidos na APF",
+            "description": "Quantidade de Servidores ativos que estão em exercício fora do seu Órgão de origem, em outros órgãos da APF\n"
+          },
+          {
+            "name": "quantidade_servidores_cedidos_outros",
+            "type": "integer",
+            "title": "Quantidade de cedidos a outros poderes e esferas",
+            "description": "Quantidade de Servidores ativos que estão em exercício fora do seu Órgão de origem, cedidos a outros poderes ou esferas administrativas\n"
+          },
+          {
+            "name": "quantidade_servidores_cedidos",
+            "type": "integer",
+            "title": "Quantidade total de cedidos",
+            "description": "Quantidade de Servidores ativos que estão em exercício fora do seu Órgão, seja em outros órgãos da APF ou a outros poderes ou esferas administrativas\n"
+          },
+          {
+            "name": "quantidade_servidores_quadro_pessoal",
+            "type": "integer",
+            "title": "Quantidade de servidores no quadro de pessoal",
+            "description": "Quantidade de Servidores no quadro de pessoal do Órgão\n"
+          },
+          {
+            "name": "quantidade_estagiarios",
+            "type": "integer",
+            "title": "Quantidade de estagiários",
+            "description": "Quantidade de Estagiários no Órgão\n"
+          }
+        ]
+      },
+      "title": "Pessoal: alocação de servidores",
+      "description": "Elaborada a partir de uma parceria com o órgão central do\nSistema de Pessoal Civil da Administração Federal (Sipec), a\nSecretaria de Gestão e Desempenho de Pessoal do Ministério da\nEconomia, a dimensão de Pessoal apresenta uma visão do universo\nde servidores públicos que compõe a Força de Trabalho de fato à\ndisposição para o desempenho das atividades das instituições\npúblicas que integram a [Administração Direta, Autárquica e\nFundacional](https://raiox.economia.gov.br/static/raiox/docs/manual-de-estruturas-organizacionais_2edicao.pdf).\n\nOs servidores públicos podem, sob certas condições, serem\nalocados para trabalhar em outros órgãos públicos. Esta tabela\napresenta os quantitativos de servidores cedidos na\nAdministração Pública federal e de estagiários em cada órgão.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "cargos-funcoes-distribuidos-ocupados.csv",
+      "name": "cargos-funcoes-distribuidos-ocupados",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "4ec3a7871dd997bda441336fd08165027b6976c77b6a49b7c15c9b2ce8408388",
+        "bytes": 377001,
+        "fields": 13,
+        "rows": 2304
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "sigla_codigo_cargo_comissao",
+            "type": "string",
+            "title": "Sigla e código do cargo em comissão",
+            "description": "Sigla e Código do Cargo ou Função, no formato de 2 ou 3 letras seguidas de 4 dígitos, ex.: “DAS1014”, “FCP1014”, “FG 0002”, etc., ou “NÃO INFORMADO”\n",
+            "constraints": {
+              "pattern": "([A-Z]{2}[A-Z ]\\d{4}|NÃO INFORMADO)"
+            }
+          },
+          {
+            "name": "cargos_distribuidos",
+            "type": "integer",
+            "title": "Quantidade de cargos distribuídos"
+          },
+          {
+            "name": "cargos_ocupados",
+            "type": "integer",
+            "title": "Quantidade de cargos ocupados",
+            "description": "Quantidade de cargos ocupados no mês de referência (caso o mesmo cargo seja ocupado por mais de uma pessoa ao longo do mês, contará mais de uma vez).\n"
+          },
+          {
+            "name": "cargos_vagos",
+            "type": "integer",
+            "title": "Quantidade de cargos vagos",
+            "description": "Quantidade de cargos vagos (diferença entre `cargos_distribuidos` e `cargos_ocupados`).\n"
+          }
+        ]
+      },
+      "title": "Pessoal: cargos e funções distribuídos e ocupados",
+      "description": "Produzida pelo próprio órgão central do Sistema de Organização e\nInovação Institucional do Governo Federal (Siorg), a Secretaria\nde Gestão do Ministério da Economia, a seção de Cargos e Funções\napresenta informações e números sobre os cargos e funções\ncomissionadas da Administração Direta, Autárquica e Fundacional.\nOs dados estão desagregados por: índices de ocupação;\ndistribuição por sexo do ocupante; e classificações de tipologia\ndos cargos e funções comissionadas, inclusive funções técnicas.\n\nDe acordo com o inciso V do art. 37 da Constituição Federal de\n1988, os cargos e funções de confiança destinam-se às\natribuições de direção, chefia e assessoramento. As funções são\nexercidas exclusivamente por servidores ocupantes de cargo\nefetivo, enquanto os cargos em comissão são vocacionadas à\nocupação em caráter transitório, por pessoas de confiança da\nautoridade competente para preenchê-los ou substituí-los, embora\ntambém para os cargos existam condições e percentuais mínimos\nprevistos em lei para preenchimento por servidores de carreira.\n\nConforme intenção evidenciada no texto introdutório do Painel,\nao passo que o Raio-X evolua, a proposta é decompor os dados de\nestrutura organizacional em níveis menores e cruzá-los com\naqueles de outras dimensões do Painel, em especial com os de\nForça de Trabalho. O propósito é construir indicadores mais\nelaborados, que permitam análises complementares para um melhor\nentendimento da realidade do Governo Federal.\n\nEsta tabela demonstra as quantidades de cargos distribuídos,\nocupados e vagos em cada órgão ou entidade.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "cargos-funcoes-perfil.csv",
+      "name": "cargos-funcoes-perfil",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "3838f8a6cccda24d56966b69eaad260e56577a11098a6ad2cbea00192e8c1c7c",
+        "bytes": 9298719,
+        "fields": 18,
+        "rows": 37328
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "sigla_codigo_cargo_comissao",
+            "type": "string",
+            "title": "Sigla e código do cargo em comissão",
+            "description": "Sigla e Código do Cargo ou Função, no formato de 2 ou 3 letras seguidas de 4 dígitos, ex.: “DAS1014”, “FCP1014”, “FG 0002”, etc.\n",
+            "constraints": {
+              "pattern": "([A-Z]{2}[A-Z ]\\d{4})"
+            }
+          },
+          {
+            "name": "denominacao_cargo_comissao",
+            "type": "string",
+            "title": "Denominação do cargo em comissão",
+            "description": "Denominação do Cargo ou Função, ex.: “CHEFE”, “COORDENADOR”, “ASSESSOR”, etc.\n"
+          },
+          {
+            "name": "sexo",
+            "type": "string",
+            "title": "Sexo",
+            "description": "Sexo da força de trabalho: **F** (feminino) ou **M** (masculino)\n",
+            "constraints": {
+              "pattern": "[FM]"
+            }
+          },
+          {
+            "name": "faixa_etaria",
+            "type": "string",
+            "title": "Faixa etária",
+            "description": "Faixa etária da força de trabalho, conforme as seguintes faixas:\n\n* 15 A 19 ANOS\n* 20 A 24 ANOS\n* 25 A 29 ANOS\n* 30 A 34 ANOS\n* 35 A 39 ANOS\n* 40 A 44 ANOS\n* 45 A 49 ANOS\n* 50 A 54 ANOS\n* 55 A 59 ANOS\n* 60 A 64 ANOS\n* 65 A 69 ANOS\n* 70 ANOS OU MAIS\n",
+            "constraints": {
+              "pattern": "\\d{1,2}\\s+A\\s+\\d{1,2}\\s+ANOS|\\d{2}\\s+ANOS\\s+OU\\s+MAIS|NÃO INFORMADO"
+            },
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "escolaridade",
+            "type": "string",
+            "title": "Escolaridade",
+            "description": "Nível de escolaridade da força de trabalho (ex.: “**SUP COMPL OU HAB LEGAL EQV**”,“**2O GR COMPL OU TEC PROFISS**”, “**DOUTORADO(T)**”,“**MESTRADO(T)**”, etc.)\n"
+          },
+          {
+            "name": "regime_juridico",
+            "type": "string",
+            "title": "Regime jurídico",
+            "description": "Regime jurídico de contratação da força de trabalho (ex.: “**EST**”,“**CDT**”, “**CLT**”, etc.)\n"
+          },
+          {
+            "name": "situacao_vinculo_servidor",
+            "type": "string",
+            "title": "Situação do vínculo do servidor",
+            "description": "Situação do vínculo da força de trabalho conforme regras do sistema SIAPE/SIGEPE (ex.: “**ATIVO PERMANENTE**”, “**CONT.PROF.SUBSTITUTO**”,“**NOMEADO CARGO COMIS.**”, etc.)\n"
+          },
+          {
+            "name": "possui_vinculo",
+            "type": "boolean",
+            "title": "Possui vínculo",
+            "description": "Identificação se a força de trabalho possui ou não vínculo com a APF: **SEM VÍNCULO** ou **COM VÍNCULO**\n",
+            "trueValues": [
+              "COM VÍNCULO"
+            ],
+            "falseValues": [
+              "SEM VÍNCULO"
+            ],
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "quantidade",
+            "type": "integer",
+            "title": "Quantidade",
+            "description": "Quantidade de Cargos ou Funções"
+          }
+        ]
+      },
+      "title": "Pessoal: cargos e funções por perfil",
+      "description": "Produzida pelo próprio órgão central do Sistema de Organização e\nInovação Institucional do Governo Federal (Siorg), a Secretaria\nde Gestão do Ministério da Economia, a seção de Cargos e Funções\napresenta informações e números sobre os cargos e funções\ncomissionadas da Administração Direta, Autárquica e Fundacional.\nOs dados estão desagregados por: índices de ocupação;\ndistribuição por sexo do ocupante; e classificações de tipologia\ndos cargos e funções comissionadas, inclusive funções técnicas.\n\nDe acordo com o inciso V do art. 37 da Constituição Federal de\n1988, os cargos e funções de confiança destinam-se às\natribuições de direção, chefia e assessoramento. As funções são\nexercidas exclusivamente por servidores ocupantes de cargo\nefetivo, enquanto os cargos em comissão são vocacionadas à\nocupação em caráter transitório, por pessoas de confiança da\nautoridade competente para preenchê-los ou substituí-los, embora\ntambém para os cargos existam condições e percentuais mínimos\nprevistos em lei para preenchimento por servidores de carreira.\n\nConforme intenção evidenciada no texto introdutório do Painel,\nao passo que o Raio-X evolua, a proposta é decompor os dados de\nestrutura organizacional em níveis menores e cruzá-los com\naqueles de outras dimensões do Painel, em especial com os de\nForça de Trabalho. O propósito é construir indicadores mais\nelaborados, que permitam análises complementares para um melhor\nentendimento da realidade do Governo Federal.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "custeio-administrativo.csv",
+      "name": "custeio-administrativo",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "a7d7ffc543c476029953070985b7bd4433177c529a7fd1243cf0a0e6074b974c",
+        "bytes": 2770523,
+        "fields": 15,
+        "rows": 11561
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "codigo_unidade_orcamentaria",
+            "type": "integer",
+            "title": "Código da unidade orçamentária"
+          },
+          {
+            "name": "codigo_item",
+            "type": "integer",
+            "title": "Código do Item de Despesa"
+          },
+          {
+            "name": "nome_item",
+            "type": "string",
+            "title": "Nome do Item de Despesa",
+            "description": "Nome do Item de Despesa (ex.: “material de consumo”, “serviços de limpeza e conservação”, “vigilância ostensiva”, etc.)\n"
+          },
+          {
+            "name": "codigo_natureza_despesa_detalhada",
+            "type": "integer",
+            "title": "Código da Natureza de Despesa Detalhada"
+          },
+          {
+            "name": "nome_natureza_despesa_detalhada",
+            "type": "string",
+            "title": "Nome da Natureza de Despesa Detalhada",
+            "description": "Nome da Natureza de Despesa Detalhada (ex.: “MATERIAL DE ESCRITORIO”, “GENEROS DE ALIMENTACAO”, “MATERIAL P/ MANUT.DE BENS IMOVEIS/INSTALACOES”, etc.)\n"
+          },
+          {
+            "name": "valor",
+            "type": "number",
+            "title": "Valor",
+            "description": "Valor da despesa, em reais"
+          }
+        ]
+      },
+      "title": "Custeio administrativo",
+      "description": "A seção Custeio Administrativo traz dados referentes àquelas\ndespesas que dão o suporte necessário para as entregas efetivas\ndos bens e serviços à sociedade, constituindo a base para a\nprestação de serviços públicos.\n\nAssim, os dados de custeio administrativo buscam dimensionar o\nque tradicionalmente se denomina de \"área meio\", e compreendem\nos gastos relativos a material de consumo, locação de imóveis,\nenergia elétrica e água, serviços de apoio, dentre vários\noutros. A relação completa e a nota metodológica podem ser\nencontrados na página do [Boletim de Custeio\nAdministrativo](https://www.gov.br/economia/pt-br/centrais-de-conteudo/publicacoes/boletins/boletim-de-custeio-administrativo).\n\nA classificação dessas despesas com custeio administrativo\nobedece ao Plano de Contas Aplicado ao Setor Público – PCASP,\nelaborado pela Secretaria do Tesouro Nacional – STN, e\ncorresponde aos subelementos de despesa mais representativos\nidentificados e selecionados pela Secretaria de Orçamento\nFederal – SOF a partir da análise da abertura dos Gastos\nPúblicos Federais por Natureza da Despesa no seu maior nível de\ndetalhamento.\n\nPor conta da natureza intrínseca do Orçamento Público Federal,\nos dados sempre serão referentes a despesas efetivamente\nrealizadas. Portanto, é imprescindível observar que, embora os\ndados disponíveis estejam desagregados por mês, haverá casos em\nque os contratos para a prestação dos serviços de que trata esta\nseção serão remunerados anualmente. Isso pode explicar, ao menos\nparcialmente, variações na amplitude dos gastos mensais.\n\nOs dados disponibilizados nesta seção são extraídos do Sistema\nIntegrado de Administração Financeira do Governo Federal –\nSIAFI, e consolidados pela Secretaria de Orçamento Federal –\nSOF.\n\nOs conceitos dos componentes da programação financeira, como a\nNatureza da Despesa, podem ser consultados no [Manual Técnico do\nOrçamento](https://www1.siop.planejamento.gov.br/mto/doku.php/mto2020:cap4#componentes_da_programacao_financeira).\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "orcamento.csv",
+      "name": "orcamento",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "9ecc8d683f3851d75110c044c5419d543c486193e895f1cea96556fee7c11ff1",
+        "bytes": 66499479,
+        "fields": 44,
+        "rows": 128851
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "codigo_uo",
+            "type": "integer",
+            "title": "Código da Unidade Orçamentária"
+          },
+          {
+            "name": "nome_uo",
+            "type": "string",
+            "title": "Nome da Unidade Orçamentária"
+          },
+          {
+            "name": "codigo_esfera_orcamentaria",
+            "type": "integer",
+            "title": "Código da Esfera Orçamentária"
+          },
+          {
+            "name": "nome_esfera_orcamentaria",
+            "type": "string",
+            "title": "Nome da Esfera Orçamentária"
+          },
+          {
+            "name": "codigo_funcao",
+            "type": "integer",
+            "title": "Código da Função Programática"
+          },
+          {
+            "name": "nome_funcao",
+            "type": "string",
+            "title": "Nome da Função Programática"
+          },
+          {
+            "name": "codigo_subfuncao",
+            "type": "integer",
+            "title": "Código da Subfunção Programática"
+          },
+          {
+            "name": "nome_subfuncao",
+            "type": "string",
+            "title": "Nome da Subfunção Programática"
+          },
+          {
+            "name": "codigo_programa",
+            "type": "integer",
+            "title": "Código do Programa Orçamentário"
+          },
+          {
+            "name": "nome_programa",
+            "type": "string",
+            "title": "Nome do Programa Orçamentário"
+          },
+          {
+            "name": "codigo_acao",
+            "type": "string",
+            "title": "Código da Ação Orçamentária",
+            "constraints": {
+              "pattern": "\\w{4}"
+            }
+          },
+          {
+            "name": "nome_acao",
+            "type": "string",
+            "title": "Nome da Ação Orçamentária"
+          },
+          {
+            "name": "codigo_grupo_natureza_despesa",
+            "type": "integer",
+            "title": "Código do Grupo Natureza de Despesa"
+          },
+          {
+            "name": "nome_grupo_natureza_despesa",
+            "type": "string",
+            "title": "Nome do Grupo Natureza de Despesa"
+          },
+          {
+            "name": "codigo_modalidade_aplicacao",
+            "type": "integer",
+            "title": "Código da Modalidade de Aplicação da Natureza de Despesa"
+          },
+          {
+            "name": "nome_modalidade_aplicacao",
+            "type": "string",
+            "title": "Nome da Modalidade de Aplicação da Natureza de Despesa"
+          },
+          {
+            "name": "codigo_categoria_economica_natureza_despesa",
+            "type": "integer",
+            "title": "Código da Categoria Econômica da Natureza de Despesa"
+          },
+          {
+            "name": "codigo_elemento_despesa_natureza_despesa",
+            "type": "integer",
+            "title": "Código do Elemento de Despesa da Natureza de Despesa"
+          },
+          {
+            "name": "codigo_subitem_natureza_despesa",
+            "type": "integer",
+            "title": "Código do Subitem da Natureza de Despesa"
+          },
+          {
+            "name": "codigo_natureza_despesa_detalhada",
+            "type": "string",
+            "title": "Código da Natureza de Despesa Detalhada",
+            "constraints": {
+              "pattern": "\\d{6}[0-9-]\\d"
+            }
+          },
+          {
+            "name": "nome_natureza_despesa_detalhada",
+            "type": "string",
+            "title": "Nome da Natureza de Despesa Detalhada"
+          },
+          {
+            "name": "codigo_resultado_primario",
+            "type": "integer",
+            "title": "Código do Resultado Primário"
+          },
+          {
+            "name": "nome_resultado_primario",
+            "type": "string",
+            "title": "Nome do Resultado Primário"
+          },
+          {
+            "name": "considerar_no_raiox",
+            "type": "boolean",
+            "title": "Considerar no Raio-X",
+            "description": "Se a linha é levada em consideração no painel do Raio-x da Administração Pública Federal (“SIM” ou “NÃO”).\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "valor_credito_disponivel",
+            "type": "number",
+            "title": "Crédito disponível",
+            "description": "Valor de crédito disponível, em reais."
+          },
+          {
+            "name": "valor_credito_indisponivel",
+            "type": "number",
+            "title": "Crédito indisponível",
+            "description": "Valor de crédito indisponível, em reais."
+          },
+          {
+            "name": "valor_despesas_empenhadas",
+            "type": "number",
+            "title": "Despesas empenhadas",
+            "description": "Valor de despesas empenhadas, em reais."
+          },
+          {
+            "name": "valor_despesas_liquidadas",
+            "type": "number",
+            "title": "Despesas liquidadas",
+            "description": "Valor de despesas liquidadas, em reais."
+          },
+          {
+            "name": "valor_despesas_pagas",
+            "type": "number",
+            "title": "Despesas pagas",
+            "description": "Valor de despesas pagas, em reais."
+          },
+          {
+            "name": "valor_dotacao_atualizada",
+            "type": "number",
+            "title": "Dotação atualizada",
+            "description": "Valor da dotação atualizada, em reais."
+          },
+          {
+            "name": "valor_dotacao_inicial",
+            "type": "number",
+            "title": "Dotação inicial",
+            "description": "Valor da dotação inicial, em reais."
+          },
+          {
+            "name": "valor_rap_a_pagar",
+            "type": "number",
+            "title": "Restos a pagar a pagar",
+            "description": "Valor dos restos a pagar a pagar, em reais."
+          },
+          {
+            "name": "valor_rap_cancelados",
+            "type": "number",
+            "title": "Restos a pagar cancelados",
+            "description": "Valor dos restos a pagar cancelados, em reais."
+          },
+          {
+            "name": "valor_rap_inscritos",
+            "type": "number",
+            "title": "Restos a pagar inscritos",
+            "description": "Valor dos restos a pagar inscritos, em reais."
+          },
+          {
+            "name": "valor_rap_pagos",
+            "type": "number",
+            "title": "Restos a pagar pagos",
+            "description": "Valor dos restos a pagar pagos, em reais."
+          }
+        ]
+      },
+      "title": "Orçamento Primário",
+      "description": "Concebida em parceria com a Secretaria de Orçamento Federal, do\nMinistério da Economia, a seção do Orçamento Primário apresenta\numa visão parcial dos valores da execução orçamentária, com um\nrecorte focado em: despesas não financeiras (Identificador de\nResultado Primário – RP diferente de 0); e despesas previstas no\nOrçamento Fiscal e no Orçamento da Seguridade Social.\n\nAlém do escopo abarcar apenas os órgãos da [Administração\nDireta, Autárquica e\nFundacional](https://raiox.economia.gov.br/static/raiox/docs/manual-de-estruturas-organizacionais_2edicao.pdf),\ntrata-se de uma perspectiva que vem sendo utilizada nas\niniciativas de transformação institucional desde o último\nprocesso de Transição Governamental. Na oportunidade, o recorte\nfoi apresentado por meio do Painel de Transição Governamental,\nde onde o Raio-X herdou os conceitos. De uma maneira geral, o\nfoco está naqueles itens que oferecem ao gestor maior capacidade\nde gerenciamento, onde suas ações são capazes de gerar impacto.\n\nEntre outros detalhes que constam nos itens e materiais de\napoio, destaca-se que nesta seção não foram incluídos valores de\norçamento próprio e de investimento das empresas estatais não\ndependentes, bem como as despesas de juros, encargos,\namortização e refinanciamento da dívida. Foram retirados alguns\norçamentos transversais e excluiu-se também o orçamento de\nalgumas Ações Orçamentárias relativas à gestão e a aplicação de\nfundos e às transferências orçamentárias.\n\nOs conceitos dos componentes da programação financeira, como a\nNatureza da Despesa, podem ser consultados no [Manual Técnico do\nOrçamento](https://www1.siop.planejamento.gov.br/mto/doku.php/mto2020:cap4#componentes_da_programacao_financeira).\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "patrimonio-uniao.csv",
+      "name": "patrimonio-uniao",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "b35acf5816f3949bfe2e92d79f6a7621b77d2aae43a028b3beda66c6a2cc5e29",
+        "bytes": 14175847,
+        "fields": 20,
+        "rows": 50838
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "regime_utilizacao",
+            "type": "string",
+            "title": "Regime de utilização",
+            "description": "Regime de utilização do Imóvel, ex.: “uso em serviço público”, “imóvel funcional”, “vago para uso”, etc.\n"
+          },
+          {
+            "name": "tipo_destinacao",
+            "type": "string",
+            "title": "Tipo de destinação",
+            "description": "Tipo de destinação do Imóvel, ex.: “residência”, “escola”, “hospital”, “universidade”, “aeroporto”, etc.\n"
+          },
+          {
+            "name": "tipo_imovel",
+            "type": "string",
+            "title": "Tipo do imóvel",
+            "description": "Tipo do Imóvel, ex.: “apartamento”, “casa”, “edifício / prédio”, etc.\n"
+          },
+          {
+            "name": "endereco",
+            "type": "string",
+            "title": "Endereço",
+            "description": "Endereço do Imóvel"
+          },
+          {
+            "name": "municipio_nome",
+            "type": "string",
+            "title": "Município (nome)",
+            "description": "Nome do município"
+          },
+          {
+            "name": "municipio_cod_ibge",
+            "type": "integer",
+            "title": "Município (cód. IBGE)",
+            "description": "Código do IBGE do município"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "title": "UF",
+            "description": "Sigla da unidade federativa"
+          },
+          {
+            "name": "metro_quadrado_area",
+            "type": "number",
+            "title": "Área (m²)",
+            "description": "Área total do Imóvel, em metros quadrados",
+            "constraints": {
+              "minimum": 0.0
+            }
+          },
+          {
+            "name": "metro_quadrado_construida",
+            "type": "number",
+            "title": "Área construída (m²)",
+            "description": "Área construída do Imóvel, em metros quadrados",
+            "constraints": {
+              "minimum": 0.0
+            }
+          },
+          {
+            "name": "valor_imovel",
+            "type": "number",
+            "title": "Valor do imóvel",
+            "description": "Valor do Imóvel, em reais"
+          },
+          {
+            "name": "valor_aluguel",
+            "type": "number",
+            "title": "Valor do aluguel",
+            "description": "Valor do aluguel do Imóvel, em reais"
+          }
+        ]
+      },
+      "title": "Patrimônio da União",
+      "description": "O segmento de dados de patrimônio da União, aqui representado,\nadvém de uma colaboração com a Secretaria de Coordenação e\nGovernança do Patrimônio da União, área do Ministério da\nEconomia, a quem compete administrar o patrimônio imobiliário da\nUnião.\n\nEsta seção se propõe a demonstrar, por meio de indicadores e\ngráficos, dados quantitativos e qualitativos dos imóveis de uso\nespecial da União, ou seja, que se destinam à execução de\nserviços administrativos ou à prestação de serviços públicos em\ngeral, tais como prédios de repartições públicas.\n\nOs dados apresentados não incluem os chamados imóveis dominiais\n— que não são ocupados pela Administração Pública — mas sim\ncedidos a terceiros por meio de instrumentos de regularização\nfundiária, tais como aforamentos, Concessões de Direito Real de\nUso (CDRU), e Concessão de Uso Especial para fins de Moradia\n(CUEM). Os dados apresentados não incluem os bens de uso comum\ndo povo — aqueles necessários à coletividade como, por exemplo,\nos rios, as praças, as vias públicas e as praias.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "pessoal-forca-trabalho.csv",
+      "name": "pessoal-forca-trabalho",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "5586c46e07a5ba9530cf1d8c07145e938555582b3a4dbb9b384935cc7592860e",
+        "bytes": 8728169,
+        "fields": 17,
+        "rows": 36734
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "sexo",
+            "type": "string",
+            "title": "Sexo",
+            "description": "Sexo da força de trabalho: **F** (feminino) ou **M** (masculino)\n",
+            "constraints": {
+              "pattern": "[FM]|NÃO INFORMADO"
+            },
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "faixa_etaria",
+            "type": "string",
+            "title": "Faixa etária",
+            "description": "Faixa etária da força de trabalho, conforme as seguintes faixas:\n\n* 15 A 19 ANOS\n* 20 A 24 ANOS\n* 25 A 29 ANOS\n* 30 A 34 ANOS\n* 35 A 39 ANOS\n* 40 A 44 ANOS\n* 45 A 49 ANOS\n* 50 A 54 ANOS\n* 55 A 59 ANOS\n* 60 A 64 ANOS\n* 65 A 69 ANOS\n* 70 ANOS OU MAIS\n",
+            "constraints": {
+              "pattern": "\\d{1,2}\\s+A\\s+\\d{1,2}\\s+ANOS|\\d{2}\\s+ANOS\\s+OU\\s+MAIS|NÃO INFORMADO"
+            },
+            "missingValues": [
+              "NÃO INFORMADO"
+            ]
+          },
+          {
+            "name": "escolaridade",
+            "type": "string",
+            "title": "Escolaridade",
+            "description": "Nível de escolaridade da força de trabalho (ex.: “**SUP COMPL OU HAB LEGAL EQV**”, “**2O GR COMPL OU TEC PROFISS**”, “**DOUTORADO(T)**”, “**MESTRADO(T)**”, etc.)\n"
+          },
+          {
+            "name": "regime_juridico",
+            "type": "string"
+          },
+          {
+            "name": "situacao_vinculo_servidor",
+            "type": "string",
+            "title": "Situação do vínculo do servidor",
+            "description": "Situação do vínculo da força de trabalho conforme regras do sistema SIAPE/SIGEPE (ex.: “**ATIVO PERMANENTE**”, “**CONT.PROF.SUBSTITUTO**”, “**NOMEADO CARGO COMIS.**”, etc.)\n"
+          },
+          {
+            "name": "possui_vinculo",
+            "type": "boolean",
+            "title": "Possui vínculo",
+            "description": "identificação se a força de trabalho possui ou não vínculo com a APF: **SEM VÍNCULO** ou **COM VÍNCULO**\n",
+            "trueValues": [
+              "COM VÍNCULO"
+            ],
+            "falseValues": [
+              "SEM VÍNCULO"
+            ]
+          },
+          {
+            "name": "quantidade_forca_trabalho",
+            "type": "integer",
+            "title": "Quantidade",
+            "description": "Quantidade de pessoas na força de trabalho",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "remuneracao_media",
+            "type": "number",
+            "title": "Remuneração média",
+            "description": "Remuneração média das pessoas na força de trabalho, em reais\n",
+            "constraints": {
+              "minimum": 0.0
+            }
+          }
+        ]
+      },
+      "title": "Pessoal: força de trabalho",
+      "description": "Elaborada a partir de uma parceria com o órgão central do\nSistema de Pessoal Civil da Administração Federal (Sipec), a\nSecretaria de Gestão e Desempenho de Pessoal do Ministério da\nEconomia, a dimensão de Pessoal apresenta uma visão do universo\nde servidores públicos que compõe a Força de Trabalho de fato à\ndisposição para o desempenho das atividades das instituições\npúblicas que integram a [Administração Direta, Autárquica e\nFundacional](https://raiox.economia.gov.br/static/raiox/docs/manual-de-estruturas-organizacionais_2edicao.pdf).\n\nEsta seção apresenta uma visão geral do pessoal em atividade nos\nórgãos e entidades, incluindo uma perspectiva ampla da força de\ntrabalho, com suas características: por sexo; por faixa etária;\npor escolaridade; e pelos cargos e carreiras do pessoal efetivo.\nEntre os conceitos mais importantes para a seção, considera-se\nForça de Trabalho aqueles servidores efetivos e comissionados,\ncom e sem vínculo permanente com a Administração, inclusive\nprofissionais contratados por tempo determinado (temporários),\nefetivamente em exercício no órgão ou entidade.\n\nEsta versão ainda não contempla alguns detalhes da força de\ntrabalho do Banco Central do Brasil, que estão em processo de\nincorporação, as informações de pessoal da carreira da Agência\nBrasileira de Inteligência (ABIN), e o pessoal militar das\nForças Armadas. Assim como também não trata do universo das\nestatais, que têm sua governança coordenada pela Secretaria de\nCoordenação e Governança das Empresas Estatais - SEST, e têm\nseus dados publicados por meio do [Panorama das\nEstatais](http://www.panoramadasestatais.planejamento.gov.br/QvAJAXZfc/opendoc.htm?document=paineldopanoramadasestatais.qvw&lang=en-US&host=QVS@srvbsaiasprd07&anonymous=true)\ne do [Boletim das\nEstatais](https://raiox.economia.gov.br/static/raiox/docs/12a-edicao-boletim-das-empresas-estatais-federais.pdf).\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "solucoes-modernizacao.csv",
+      "name": "solucoes-modernizacao",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "7b31d22616eb780c10e2063e44901e183f02a07e27523b1192b7883847d77f17",
+        "bytes": 36839,
+        "fields": 18,
+        "rows": 187
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "possui_protocolo_integrado",
+            "type": "boolean",
+            "title": "Possui Protocolo Integrado",
+            "description": "Se o Órgão dispõe (SIM/NÃO) de interoperabilidade entre os diferentes sistemas de protocolo utilizados para registrar o trâmite dos documentos com o Sistema Protocolo Integrado.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "possui_processo_eletronico",
+            "type": "boolean",
+            "title": "Possui processo eletrônico",
+            "description": "Se o Órgão dispõe (SIM/NÃO) de sistema de gestão de processos e documentos eletrônicos (ex.: SEI, SIPAC, SIGA, SAPIENS ou outro).\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "integra_barramento_pen",
+            "type": "boolean",
+            "title": "Integra o barramento do PEN",
+            "description": "Se o Órgão tem implantado (SIM/NÃO) barramento do Processo Eletrônico Nacional, que é uma infraestrutura centralizada para enviar processos ou documentos administrativos digitais para outro órgão de maneira segura e com confiabilidade de entrega.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "utiliza_taxigov",
+            "type": "boolean",
+            "title": "Utiliza o Táxi Gov",
+            "description": "Se o Órgão aderiu (SIM/NÃO) ao uso do TáxiGov, modelo que substituiu os veículos alugados e próprios por outras formas de transporte de servidores e colaboradores em deslocamentos a trabalho.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "utiliza_almoxarifado_virtual",
+            "type": "boolean",
+            "title": "Utiliza o almoxarifado virtual",
+            "description": "Se o Órgão usa Almoxarifado Virtual (SIM/NÃO). O serviço é baseado na aquisição de materiais de consumo administrativo com utilização de plataforma tecnológica.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "integra_rede_mais_brasil",
+            "type": "boolean",
+            "title": "Integra a Rede +Brasil",
+            "description": "Se o Órgão ingressou na Rede +Brasil, que é a rede de governança colaborativa que tem por objetivo promover maior integração entre os atores envolvidos no ciclo de transferências de recursos públicos (SIM/NÃO).\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "aderiu_transforma_gov",
+            "type": "boolean",
+            "title": "Aderiu ao TransformaGov",
+            "description": "Se o Órgão aderiu (SIM/NÃO) ao Programa de Gestão Estratégica e Transformação do Estado (TransformaGov). O programa, voltado à administração pública federal direta, autárquica e fundacional, exceto Instituições Federais de Ensino, contempla novos arranjos institucionais e medidas de eficiência organizacional.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "publica_pei",
+            "type": "boolean",
+            "title": "Publica PEI",
+            "description": "Se o Órgão divulga (SIM/NÃO) seu Planejamento Estratégico Institucional - PEI, instrumento que determina os seus principais objetivos, as políticas e estratégias que a governarão, o uso e disponibilização dos recursos, definição de objetivos, estratégias, metas, ações e valores, de forma a ordenar a alocação dos recursos, definindo prioridades.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          },
+          {
+            "name": "integra_pag_terouro",
+            "type": "boolean",
+            "title": "Integra ao PagTesouro",
+            "description": "Se o Órgão utiliza (SIM/NÃO) em seus serviços o PagTesouro, que é a plataforma de pagamentos para o governo.\n",
+            "trueValues": [
+              "SIM"
+            ],
+            "falseValues": [
+              "NÃO"
+            ]
+          }
+        ]
+      },
+      "title": "Soluções de modernização",
+      "description": "Em Soluções de Modernização estão organizadas informações sobre\nadesão e utilização de serviços compartilhados e outras\niniciativas voltadas à inovação institucional, otimização de\nprocessos, redução de custos e aumento da transparência na\nAdministração Pública Federal. Este acompanhamento mostra a\nsituação de adesão e uso dos órgãos e entidades da Administração\nDireta, Autárquica e Fundacional. Aqui são apresentados dados\nsobre o andamento de algumas das soluções oferecidas pela\nSecretaria de Gestão, sob coordenação da Secretaria Especial de\nDesburocratização, Gestão e Governo Digital. Muito mais\ninformações sobre serviços compartilhados, sistemas, aplicativos\ne plataformas digitais podem ser encontradas no Catálogo de\nSoluções.\n\nNeste Painel, estão apresentadas as informações sobre a adesão\nao Programa TransformaGov e à Rede +BRASIL, e sobre a utilização\nde novos modelos de serviços como o TáxiGov e o Almoxarifado\nVirtual. Além disso, também é possível acompanhar a aderência\ndos órgãos e entidades ao Processo Eletrônico Nacional (PEN),\nque compreende basicamente o emprego de um Sistema de Processo\nEletrônico, o acoplamento desse Sistema à infraestrutura do\nBarramento do PEN, que possibilita o trâmite de processos entre\nórgãos e entidades em meio digital e, por fim, a\ndisponibilização das informações desses trâmites de processos no\nPortal Protocolo Integrado.\n"
+    },
+    {
+      "hashing": "sha256",
+      "path": "transformacao-digital.csv",
+      "name": "transformacao-digital",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "stats": {
+        "hash": "02ee521da09f391ed5199c01062b912f93ae926cd1dabab5ace48c2d83764bc4",
+        "bytes": 1355783,
+        "fields": 22,
+        "rows": 4408
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao_superior_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão Superior"
+          },
+          {
+            "name": "orgao_superior_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão Superior"
+          },
+          {
+            "name": "orgao_codigo_siorg",
+            "type": "string",
+            "title": "Código SIORG do Órgão"
+          },
+          {
+            "name": "orgao_nome",
+            "type": "string",
+            "title": "Nome por extenso do Órgão"
+          },
+          {
+            "name": "orgao_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão"
+          },
+          {
+            "name": "orgao_como_no_raiox_nome",
+            "type": "string",
+            "title": "Nome do Órgão no Raio-X",
+            "description": "Nome do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "orgao_como_no_raiox_sigla",
+            "type": "string",
+            "title": "Sigla do Órgão no Raio-X",
+            "description": "Sigla do Órgão, da maneira como aparece consolidado no Raio-X\n"
+          },
+          {
+            "name": "ano_mes_referencia",
+            "type": "date",
+            "title": "Ano/mês de referência",
+            "description": "Ano/mês no formato **YYYYMM** referente à extração dos dados\n",
+            "format": "%Y%m"
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "title": "Área",
+            "description": "Área temática do serviço"
+          },
+          {
+            "name": "servico",
+            "type": "string",
+            "title": "Serviço",
+            "description": "Nome do serviço"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "title": "Situação",
+            "description": "Situação do serviço em relação à sua transformação digital conforme controle da Secretaria de Governo Digital: '**Digital**', '**Prospecção**', '**Transformado**', '**Pactuado**', '**Implantação**', '**Automação**', '**Preparação**' ou '**Não digital**'.\n",
+            "constraints": {
+              "enum": [
+                "Digital",
+                "Prospecção",
+                "Transformado",
+                "Pactuado",
+                "Não digital",
+                "Não informado",
+                "Automação",
+                "Implantação",
+                "Preparação",
+                "Não digitalizável"
+              ]
+            },
+            "missingValues": [
+              "Não informado"
+            ]
+          },
+          {
+            "name": "situacao_raiox",
+            "type": "string",
+            "title": "Situação no Raio-X",
+            "description": "Situação do serviço em relação à sua transformação digital, conforme exibido no painel Raio-X da APF: '**Digitalizado**', '**Digitalização não iniciada**' ou '**Em digitalização***'.\n",
+            "constraints": {
+              "enum": [
+                "Digitalizado",
+                "Digitalização não iniciada",
+                "Em digitalização",
+                "Não digitalizável"
+              ]
+            }
+          },
+          {
+            "name": "integracao_pagtesouro",
+            "type": "string",
+            "title": "Integração com o PagTesouro",
+            "description": "Situação do serviço em relação à sua integração com o PagTesouro: ‘**Integrado**’, ‘**Pactuação**’ ou em branco.\n",
+            "constraints": {
+              "enum": [
+                "Integrado",
+                "Pactuação",
+                "Em homologação",
+                "Implantação"
+              ]
+            }
+          },
+          {
+            "name": "valor_percentual_etapas_digitais",
+            "type": "number",
+            "title": "Percentual de etapas digitais",
+            "description": "Percentual, variando de 0 a 1, da quantidade de etapas do serviço que são digitais, em relação à quantidade total de etapas do serviço.\n",
+            "constraints": {
+              "minimum": 0.0,
+              "maximum": 1.0
+            }
+          },
+          {
+            "name": "valor_economia_potencial_governo",
+            "type": "number",
+            "title": "Economia potencial para o governo",
+            "description": "Economia potencial para o governo com a digitalização do serviço, em R$.\n"
+          },
+          {
+            "name": "valor_economia_potencial_sociedade",
+            "type": "number",
+            "title": "Economia potencial para a sociedade",
+            "description": "Economia potencial para a sociedade com a digitalização do serviço, em R$.\n"
+          },
+          {
+            "name": "quantidade_beneficiados_ano",
+            "type": "integer",
+            "title": "Quantidade de beneficiados por ano",
+            "description": "Quantidade de pessoas beneficiadas com o serviço, por ano.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "valor_economia_anual_governo",
+            "type": "number",
+            "title": "Economia anual para o governo",
+            "description": "Economia real para o governo com a digitalização do serviço, em R$, por ano.\n"
+          },
+          {
+            "name": "valor_economia_anual_sociedade",
+            "type": "number",
+            "title": "Economia anual para a sociedade",
+            "description": "Economia real para a sociedade com a digitalização do serviço, em R$, por ano.\n"
+          },
+          {
+            "name": "valor_investimento",
+            "type": "number",
+            "title": "Valor do investimento",
+            "description": "Valor do investimento para a digitalização do serviço."
+          },
+          {
+            "name": "previsao_entrega_trimestre",
+            "type": "integer",
+            "title": "Previsão de entrega (trimestre)",
+            "description": "Previsão do trimestre em que a digitalização do serviço será entregue, em número do trimestre, a contar do primeiro trimestre de 2019, que recebe o valor 1, sendo incrementado a cada trimestre. Aplica-se apenas para os serviços com situações Pactuado, Preparação, Automação, Implantação e Transformado.\n",
+            "constraints": {
+              "minimum": 1
+            }
+          }
+        ]
+      },
+      "title": "Transformação digital",
+      "description": "Por meio dos Planos de Transformação Digital pactuados pelos\nórgãos e entidades com a Secretaria de Governo Digital, do\nMinistério da Economia, esta seção apresenta um resumo dos\nesforços do governo federal no âmbito da estratégia de\ntransformação digital, com o objetivo de simplificar o\nmonitoramento, a avaliação e, sobretudo, o acesso dos cidadãos\naos serviços públicos.\n\nAqui, são apresentados os serviços de acordo com o seu estágio no\nprocesso de digitalização (se não iniciado, em andamento ou concluído);\na organização por área temática; por órgão ou entidade; e o número de\nbeneficiados, além da economia potencial e realizada com a\ndigitalização desses serviços.\n\nO acompanhamento dessas ações, sob responsabilidade da Secretaria\nEspecial de Desburocratização, Gestão e Governo Digital do Ministério\nda Economia, é feito por meio dos Planos de Transformação Digital, em\nque são pactuadas metas com os órgãos da Administração Direta,\nAutárquica e Fundacional.\n"
+    }
+  ],
+  "profile": "data-package",
+  "name": "raio-x-da-administracao-publica-federal-2021-10",
+  "title": "Raio-X da Administração Pública Federal (outubro/2021)",
+  "description": "O Raio-X da Administração Pública Federal é uma ferramenta\ngerencial, em desenvolvimento pela Secretaria Especial de\nDesburocratização, Gestão e Governo Digital do Ministério da\nEconomia, que tem o objetivo de fomentar o acompanhamento da gestão\npública, do seu aprimoramento por meio do uso de dados e\ninformações, além de impulsionar o fortalecimento dos Sistemas\nEstruturadores do Governo Federal.\n\nO Painel consolida um conjunto de dados sobre:\n  \n* o Orçamento Primário;\n* a composição e as características do Pessoal;\n* a estrutura de Cargos e Funções;\n* a evolução do Processo de Transformação Digital;\n* a adesão das instituições às Soluções de Modernização;\n* as informações relativas ao Patrimônio da União e\n* o acompanhamento do gasto com Custeio Administrativo.\n\nAlém de poder visualizar os dados pelo painel, é possível também\nbaixar e utilizar, na forma de dados abertos, as informações nele\nmostradas. Isso possibilita a realização de outros tipos de análise\nnão previstas nas visualizações do painel, além do cruzamento com\noutras fontes de dados.\n\n## Organização das tabelas\n\nOs dados disponibilizados estão organizados por arquivos no formato\nCSV (valores separados por vírgulas) que podem ser abertos em\nqualquer editor de planilhas. Os dados estão agrupados no menor\nnível de agregação possível, exceto quando a desagregação implique\nem exposição de dados pessoais. Eles seguem uma estrutura\ndimensional, ou seja, contém colunas de dimensão e de métricas. A\nquantidade de linhas de cada tabela depende da quantidade de\ndimensões utilizadas. As colunas com métricas podem ser consolidadas\nrespeitando a mesma regra inicial. Por exemplo, na tabela\n`pessoal-forca-trabalho.csv` podemos calcular a quantidade total da\nforça de trabalho apenas somando todos os valores da coluna\n`quantidade_forca_trabalho`. Por outro lado, para calcular a\nremuneração média total, é necessário realizar uma média ponderada\ndo campo `remuneracao_media` ponderada com o campo\n`quantidade_forca_trabalho`. Todas as tabelas possuem os seguintes\ncampos: `orgao_superior_codigo_siorg`, `orgao_superior_nome`,\n`orgao_superior_sigla`, `orgao_codigo_siorg`, `orgao_nome`,\n`orgao_sigla`, `orgao_como_no_raiox_nome`,\n`orgao_como_no_raiox_sigla` e `ano_mes_referencia`. Estes campos são\nreferentes ao órgão, seu órgão superior (ex.: FUNAI está vinculada\nao MJSP) e ao ano/mês referente à extração dos dados.\n\nOs campos `orgao_como_no_raiox_nome` e `orgao_como_no_raiox_sigla`\nse referem à maneira como eles aparecem consolidados no painel do\nRaio-X da Administração Pública Federal. Nele, alguns órgãos\naparecem consolidados juntamente com o nível hierárquico superior.\nPor exemplo, os dados da Casa Civil da Presidência da República\naparecem consolidados juntamente com a Presidência da República. Nos\ndados abertos, optamos por ofertar os dados mais desagregados para\npossibilitar mais análises. No entanto, para que as informações\ncoincidam com as apresentadas no painel, o órgão como representado\nneste campo deve ser considerado.\n",
+  "version": "1.3.0",
+  "contributors": [
+    {
+      "title": "Coordenação-Geral de Gestão da Informação da SEGES",
+      "email": "seges.cginf@economia.gov.br",
+      "organization": "Ministério da Economia",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Raio-X da Administração Pública Federal",
+      "path": "https://gov.br/raiox"
+    }
+  ]
+}

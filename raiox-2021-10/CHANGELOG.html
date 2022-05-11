@@ -1,0 +1,123 @@
+<p>Dados abertos do Raio-X da Administração Pública Federal</p>
+<h2>Histórico de versões</h2>
+<h3>Versão 1.3.0 (julho/2021)</h3>
+<h4>Tradução para inglês</h4>
+<p>Os metadados no Data Package agora estão disponíveis, além do original
+em português, também em idioma inglês. Isso inclui os títulos e
+descrição do conjunto de dados, de todas as tabelas (recursos) e de
+todos os campos de cada tabela.</p>
+<h4>Novos status para transformação digital</h4>
+<p>Foram incluídos no esquema da tabela de transformação digital novos
+valores possíveis para os campos <code>situacao</code>, <code>situacao_raiox</code> e
+<code>integracao_pagtesuro</code>.</p>
+<h4>Mudanças de nomes na tabela de cargos alocados</h4>
+<p>A tabela <code>cargos-funcoes-alocados-ocupados.csv</code> agora se chama
+<code>cargos-funcoes-distribuidos-ocupados.csv</code>. Além disso, os nomes dos
+campos foram alterados para ficarem harmonizados com a nomenclatura
+usada no painel do Raio-X.</p>
+<h3>Versão 1.2.0 (junho/2021)</h3>
+<h4>Publicação retroativa a partir de janeiro/2020</h4>
+<p>Foram incluídos arquivos zip contendo as extrações dos dados do Raio-X a
+partir do mês de janeiro de 2020. Algumas tabelas, entretanto, ainda não
+estão presentes nesses arquivos, considerando que os dados para esses
+períodos não estão disponíveis nos bancos de dados que dão origem ao
+painel do Raio-X da APF. Eventualmente, essas lacunas poderão ser
+preenchidas no futuro, caso seja viável encontrar fontes de dados
+retroativos que alimentem o banco de dados. Os dados que não contemplam
+o período completo são os seguintes:</p>
+<ul>
+<li>transformação digital —  disponível a partir de fevereiro/2020</li>
+<li>pessoal: força de trabalho; pessoal: cargos e funções (perfil e
+  alocação/ocupação); pessoal: alocação de servidores — disponível a
+  partir de fevereiro/2020</li>
+<li>soluções de modernização — disponível a partir de fevereiro/2020</li>
+<li>patrimônio da união — disponível a partir de abril/2020</li>
+</ul>
+<p>Os demais dados contemplam o período completo a partir de janeiro/2020.</p>
+<h4>Correções na tabela de pessoal força de trabalho</h4>
+<p>A tabela de pessoal – força de trabalho estava sendo extraída com
+referência incorreta de data. O problema foi corrigido e os dados
+retroativos extraídos.</p>
+<p>Além disso, as linhas referentes ao Banco Central retornavam valores
+inválidos para o campo <code>sexo</code>. Como o órgão não fornece essa informação,
+esses casos foram preenchidos com o valor NÃO INFORMADO.</p>
+<h4>Correção nas quantidades de cargos e funções alocados e ocupados</h4>
+<p>As quantidades de cargos alocados não estavam sendo contabilizadas
+corretamente, o que também afetava o número de cargos disponíveis. O
+problema foi corrigido.</p>
+<h4>Correção nos dados de perfis de ocupantes de cargos e funções</h4>
+<p>Constavam agrupamentos de servidores que não ocupam, de fato, cargos e
+funções. Esses agrupamentos foram retirados, pois estão fora do escopo
+definido para esta tabela. Além disso, eram redundantes, já que há outra
+tabela para o perfil da força de trabalho.</p>
+<h4>Correções nos dados de transformação digital</h4>
+<p>Foram corrigidos alguns erros no processamento das tabelas de
+transformação digital:
+* alguns valores numéricos estavam ausentes (campo vazio) nas tabelas e
+  agora estão devidamente preenchidos;
+* na previsão de semestre de entrega da digitalização do serviço, não
+  constavam corretamente os serviços com entrega prevista a partir de
+  2021. Agora esses valores foram corrigidos. Além disso, essa coluna
+  agora pode ser preenchida apenas nas situações Pactuado, Preparação,
+  Automação, Implantação e Transformado.</p>
+<h3>Versão 1.1.0 (abril/2021)</h3>
+<h4>Alteração de metodologia de cálculo do custeio</h4>
+<p>Em fevereiro de 2021, a Secretaria de Orçamento Federal mudou a
+metodologia de cálculo do custeio administrativo, conforme descrito na
+<a href="https://www.gov.br/economia/pt-br/centrais-de-conteudo/publicacoes/boletins/boletim-de-custeio-administrativo/AnexoIINotaExplicativaRevisodasNaturezasdeDespesas.docx">nota explicativa</a>
+disponível no
+<a href="https://www.gov.br/economia/pt-br/centrais-de-conteudo/publicacoes/boletins/boletim-de-custeio-administrativo">Boletim do Custeio Administrativo</a>.</p>
+<p>Com isso, foram atualizados os cálculos do custeio, inclusive
+retroativamente, referentes ao período de 2011 a 2020. Os dados do
+Raio-X da Administração Pública Federal foram atualizados para refletir
+essa mudança.</p>
+<p>Assim, serão substituídos os arquivos zip dos meses a partir de
+agosto/2020, alterando as tabelas de custeio, com os novos dados, de
+maneira a possibilitar a comparação de dados em toda a série histórica.</p>
+<h4>Campos adicionais no patrimônio</h4>
+<p>Na tabela <code>patrimonio-uniao.csv</code>, foram acrescentados os campos
+<code>municipio_nome</code>, <code>municipio_cod_ibge</code> e <code>uf</code> conforme descritos no
+modelo de dados e descritor Data Package.</p>
+<h4>Correção na tabela de pessoal, cargos e funções</h4>
+<p>A tabela <code>cargos-funcoes-perfil.csv</code> possuía algumas agregações
+incorretas que geravam valores inválidos no campo <code>sexo</code>.</p>
+<p>Além disso, em 69 linhas da tabela, vários campos figuravam com valores
+nulos.</p>
+<p>Foi criada uma nova extração para a tabela que corrige esses problemas.</p>
+<h4>Correção na tabela de soluções de modernização</h4>
+<p>Alguns órgãos figuravam de forma duplicada nessa tabela. Uma nova lógica
+de extração dos dados corrige esse problema.</p>
+<h3>Versão 1.0.0 (agosto/2020)</h3>
+<p>Versão inicial, contendo:</p>
+<ul>
+<li>Arquivo zip do mês, com os seguintes arquivos:</li>
+<li><code>datapackage.json</code> – arquivo com os metadados e descrição das tabelas
+    no formato da especificação
+    <a href="https://specs.frictionlessdata.io/data-package/">Data Package</a> do
+    Frictionless Data, incluindo os tipos de dados das colunas de cada
+    tabela</li>
+<li><code>transformacao-digital.csv</code> – tabela com os dados sobre transformação
+    digital</li>
+<li><code>pessoal-forca-trabalho.csv</code> – tabela com os dados sobre a força de
+    trabalho</li>
+<li><code>solucoes-modernizacao.csv</code> – tabela com os dados sobre as soluções
+    de modernização</li>
+<li><code>patrimonio-uniao.csv</code> – tabela com os dados sobre o patrimônio
+    (imóveis) da União</li>
+<li><code>custeio-administrativo.csv</code> – tabela com os dados sobre o custeio
+    administrativo</li>
+<li><code>cargos-funcoes-perfil.csv</code> – tabela com os dados sobre os perfis de
+    ocupantes de cargos e funções</li>
+<li><code>cargos-funcoes-alocados-ocupados.csv</code> – tabela com os dados sobre
+    os cargos e funções que estão alocados e ocupados</li>
+<li><code>orcamento.csv</code> – tabela com os dados sobre o orçamento federal</li>
+<li><code>alocacao-servidores.csv</code> – tabela com os dados sobre a alocação de
+    servidores públicos</li>
+<li>modelo de dados no formato PDF, descrevendo as tabelas</li>
+</ul>
+<p>Os arquivos zipados também serão disponibilizados individualmente, fora
+do arquivo zip. Estes serão substituídos a cada atualização, mantendo
+sempre os dados do mês mais recente.</p>
+<p>A cada mês será gerado um novo arquivo zip, mantendo os arquivos zip dos
+meses anteriores. Assim, para comparar diferentes meses, será necessário
+fazer o download dos arquivos zip dos meses anteriores.</p>
